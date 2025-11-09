@@ -12,7 +12,7 @@ import xgboost as xgb
 from sklearn.metrics import mean_absolute_error,mean_squared_error,r2_score
 import pickle
 
-data = pd.read_csv("USA_Housing (model).csv")
+data = pd.read_csv('USA_Housing(model).csv')
 
 # preprocessing
 X = data.drop(['Price', 'Address'], axis=1)
@@ -67,3 +67,4 @@ results_df.to_csv('model_evaluation_results.csv', index=False)
 
 
 print("Model have been trained and saved as pickle files. evaluation result have been saved to model_evaluation_result.csv.")
+
